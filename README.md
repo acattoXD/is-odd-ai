@@ -4,7 +4,7 @@
 
 Why check if something is odd simply, when you can do it with ✨AI✨
 
-`is-odd-ai` is a unique package that utilizes OpenAI's GPT-3.5-turbo model to determine if a number is odd or even. Because sometimes you just want to add a little bit of AI magic to your number checking!
+`is-odd-ai` is a unique package that utilizes OpenAI's GPT-4o-mini model to determine if a number is odd or even. Because sometimes you just want to add a little bit of AI magic to your number checking!
 
 ## Installation
 
