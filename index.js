@@ -5,11 +5,11 @@ require('dotenv').config();
 
 
 // Function to check if a number is odd using OpenAI ChatGPT
-async function isOdd(number) {
+async function isOdd(number, apiKey) {
     try {
         // Construct the request payload
         const requestData = {
-            model: "gpt-3.5-turbo",
+            model: "gpt-4o-mini",
             messages: [{ role: "user", content: `Is ${number} odd or even?` }],
             temperature: 0.7
         };
@@ -18,7 +18,7 @@ async function isOdd(number) {
         const response = await axios.post('https://api.openai.com/v1/chat/completions', requestData, {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}` // Use environment variable for API key
+                'Authorization': `Bearer ${apiKey}` // Use environment variable for API key
             }
         });
 
